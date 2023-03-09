@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="all-box">
+        <h1 class="text-center mt-5">숫자 맞추기 게임</h1>
+        <h2 class="text-center mt-4 mb-5">UP & DOWN</h2>
+        <h5 class="text-center" >1부터 100 까지의 숫자를 입력해서 정답을 맞추는 게임. 숫자를 입력한 뒤 GO버튼을 눌렀을때 UP이 나오면 더 큰 숫자를 입력해야하고 DOWN이 나오면 작은 숫자 입력해야한다. 기회는 단 5번!</ㅗ>
+        <p class="result-area text-center mt-5 mb-5">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/START_logo_2021.svg/1280px-START_logo_2021.svg.png" width="40%" id="image"/>
+        </p>
+        <div class="mb-4" id="result">시작하세요!</div>
+        <h2 class="chances text-center" id="chances">남은기회 : 5번</h2>
+        <div class="row d-flex justify-content-center mt-5 mb-5">
+          <div class="col-md-6 col-sm-12">
+            <input type="number" id="num"  placeholder="숫자를 입력하세요" min="1" max="100"/>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <button type="button" class="btn btn-light me-2" id="go-button">Go</button>
+            <button type="button" class="btn btn-secondary" id="reset-button">Reset</button>
+          </div>
+
+        </div>
+       
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
